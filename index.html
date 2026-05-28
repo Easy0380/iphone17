@@ -1,0 +1,73 @@
+<html>
+
+<head>
+
+<style>
+#bw{
+   background-color:#E6E6E6 
+;
+}
+#bo{
+   background-color:#F77E39 宇宙橙
+;
+}
+#bb{
+   background-color:#48547E 藏藍
+0;
+}
+.Fiona{
+   width:10;
+   height:10;
+   border: 1px solid #F5F5F7 背景;
+   border-radius: 1px;
+}
+</style>
+
+<script>
+function showColor(cid){
+   if(cid==1)
+   {
+      document.getElementById("iphonecolor").innerHTML="銀色";
+      document.getElementById("iphonephoto").setAttribute("src","iphone17s.jpg");
+   }
+   else if(cid==2){
+       document.getElementById("iphonecolor").innerHTML="宇宙橙";
+      document.getElementById("iphonephoto").setAttribute("src","iphone17o.jpg");
+      
+   }
+   else if(cid==3)
+      {
+         document.getElementById("iphonecolor").innerHTML="藏藍";
+         document.getElementById("iphonephoto").setAttribute("src","iphone17b.jpg");
+      }
+   
+      
+     
+      
+}
+</script>
+
+
+<body>
+
+<center>
+
+<h1 style="color:#ff0000;">選你喜歡的顏色</h1>
+
+<br>
+
+<div id="iphonecolor">？</div>
+
+<img id="iphonephoto" src="iphone17o.jpg" height="360">
+
+<br><br>
+
+<input type="button" id="bw" class="Fiona" onclick="javascript:{showColor(1);}"></input>
+<input type="button" id="bo" class="Fiona" onclick="javascript:{showColor(2);}"></input>
+<input type="button" id="bb" class="Fiona" onclick="javascript:{showColor(3);}"></input>
+
+</center>
+
+</body>
+
+</html>
